@@ -35,4 +35,38 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.mugShot {}
+.skills {
+    flex-basis: 100%;
+}
+
+.icon-links {
+    flex: 0 1 24%;
+    margin-left: 2%;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Github */
+.fa-github {
+    color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+    color: #0077B5;
+}
