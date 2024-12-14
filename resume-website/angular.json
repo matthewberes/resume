@@ -84,7 +84,14 @@
               "src/assets",
               "src/assets/favicon.png",
               "src/assets/mugshot.jpg",
-              "src/assets/placeholder.jpg"
+              "src/assets/placeholder.jpg",
+              "src/assets/agile.png",
+              "src/assets/testing.png",
+              "src/assets/automation.png",
+              "src/assets/cybersecurity.png",
+              "src/assets/angular.png",
+              "src/assets/data.png",
+              "src/assets/office.png"
             ],
             "styles": [
               "src/styles.css"
