@@ -37,11 +37,19 @@
 
 .skills {
     flex-basis: 100%;
+    margin-top: -1%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .icon-links {
     flex: 0 1 24%;
     margin-left: 2%;
+}
+
+.placeholder {
+    height: 150px;
+    width: 150px;
 }
 
 
@@ -63,7 +71,7 @@
 
 /* Github */
 .fa-github {
-    color: white;
+    color: #2dba4e;
 }
 
 /* LinkedIn */

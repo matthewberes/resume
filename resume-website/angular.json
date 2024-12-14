@@ -83,7 +83,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/assets/favicon.png",
-              "src/assets/mugshot.jpg"
+              "src/assets/mugshot.jpg",
+              "src/assets/placeholder.jpg"
             ],
             "styles": [
               "src/styles.css"
