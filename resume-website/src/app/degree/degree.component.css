@@ -1,0 +1,12 @@
+.page {
+    height: 82vh;
+    width: 100vw;
+}
+
+iframe {
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    height: 655px;
+}

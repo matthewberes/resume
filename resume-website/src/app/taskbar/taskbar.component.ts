@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-taskbar',
@@ -9,12 +10,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './taskbar.component.css'
 })
 export class TaskbarComponent implements OnInit {
+  constructor(private router: Router) { }
   path: string = "";
   ngOnInit(): void {
     this.path = window.location.pathname;
   }
 
   onClick(val: string) {
-    window.open("/" + val)
+    this.router.navigate(["/" + val]);
   }
 }
