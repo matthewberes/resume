@@ -12,4 +12,5 @@ h2 {
 
 .buttons h2:hover {
     color: #888888;
+    cursor: pointer;
 }

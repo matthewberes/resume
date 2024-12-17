@@ -11,12 +11,15 @@ import { Router } from '@angular/router';
 })
 export class TaskbarComponent implements OnInit {
   constructor(private router: Router) { }
+
   path: string = "";
+
   ngOnInit(): void {
     this.path = window.location.pathname;
   }
 
   onClick(val: string) {
-    this.router.navigate(["/" + val]);
+    this.path = "/" + val
+    this.router.navigate([this.path]);
   }
 }
