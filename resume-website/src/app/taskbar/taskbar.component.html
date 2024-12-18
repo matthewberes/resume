@@ -4,9 +4,9 @@
             <h2>Matthew Beres</h2>
         </div>
         <div class="buttons" style="float: right; display: flex; justify-content: flex-end;">
-            <h2 [ngClass]="{'curr': path == '/home'}" style="margin-right: 30px;" (click)="onClick('home')">Home</h2>
-            <h2 [ngClass]="{'curr': path == '/resume'}" style="margin-right: 30px;" (click)="onClick('resume')">Resume</h2>        
-            <h2 [ngClass]="{'curr': path == '/degree'}" (click)="onClick('degree')">Degree</h2>
+            <h2 [ngClass]="{'curr': path == '/home'}" style="margin-right: 30px;" (click)="onClick('home')" tabindex="0" (keyup.enter)="onClick('home')">Home</h2>
+            <h2 [ngClass]="{'curr': path == '/resume'}" style="margin-right: 30px;" (click)="onClick('resume')" tabindex="0" (keyup.enter)="onClick('resume')">Resume</h2>        
+            <h2 [ngClass]="{'curr': path == '/degree'}" (click)="onClick('degree')" tabindex="0" (keyup.enter)="onClick('degree')">Degree</h2>
         </div>
     </div>
 </div>
