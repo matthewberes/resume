@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class TaskbarComponent implements OnInit {
   constructor(private router: Router) { }
 
-  path: string = "/home";
+  path: string = "";
 
   ngOnInit(): void {
     this.path = window.location.pathname;
