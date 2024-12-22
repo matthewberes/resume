@@ -15,11 +15,11 @@ export class TaskbarComponent implements OnInit {
   path: string = "";
 
   ngOnInit(): void {
-    this.path = window.location.pathname;
+    this.path = window.location.hash;
   }
 
   onClick(val: string) {
-    this.path = "/" + val
-    this.router.navigate([this.path]);
+    this.path = "#/" + val;
+    this.router.navigate(['/' + val]);
   }
 }
