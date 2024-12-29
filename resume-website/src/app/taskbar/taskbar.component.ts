@@ -15,7 +15,11 @@ export class TaskbarComponent implements OnInit {
   path: string = "";
 
   ngOnInit(): void {
-    this.path = window.location.hash;
+    if (window.location.hash == "") {
+      this.path = "#/home";
+    } else {
+      this.path = window.location.hash;
+    }
   }
 
   onClick(val: string) {
