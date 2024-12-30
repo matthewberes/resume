@@ -6,5 +6,5 @@ div {
     margin-left: -8px;
     margin-right: -8px;
     min-height: 100%;
-    max-width: 100%;
+    overflow: visible;
 }
