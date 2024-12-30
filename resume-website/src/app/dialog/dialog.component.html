@@ -1,4 +1,58 @@
 <div>
-<p>dialog works!</p>
-<p>{{data.item}}</p>
+    <ng-container *ngIf="data.item == 'agile'">
+        <h3>Agile Experience</h3>
+        <ul>
+            <li>2+ years professional experience working in an Agile environment</li>
+            <li>Experience with Scrum framework where sprints completing every 2 weeks</li>
+            <li>Progress was tracked using Jira</li>
+        </ul>
+    </ng-container>
+    <ng-container *ngIf="data.item == 'testing'">
+        <h3>Unit Testing Experience</h3>
+        <ul>
+            <li>2+ years professional experience creating front-end and back-end unit tests</li>
+            <li>Experience writing Jasmine and JUnit tests</li>
+            <li>Regression testing, smoke testing, negative testing, and performance testing</li>
+        </ul>
+    </ng-container>
+    <ng-container *ngIf="data.item == 'automation'">
+        <h3>Automation Experience</h3>
+        <ul>
+            <li>2+ years professional experience writing scripts for regression testing</li>
+            <li>Experience with Playwright framework</li>
+            <li>Experience building programs with Python and Selenium to automate inputs on webpages</li>
+        </ul>
+    </ng-container>
+    <ng-container *ngIf="data.item == 'angular'">
+        <h3>Angular Experience</h3>
+        <ul>
+            <li>2+ years professional experience creating webpages using Angular</li>
+            <li>Experience with the RxJS library</li>
+            <li>Up to date with latest Angular versions and best practices</li>
+        </ul>        
+    </ng-container>
+    <ng-container *ngIf="data.item == 'cybersecurity'">
+        <h3>Cybersecurity Experience</h3>
+        <ul>
+            <li>Experience fortifying applications to prevent SQL injection</li>
+            <li>Experience with encyption and hashing to secure sensitive data in databases</li>
+            <li>Experienced in brute-force prevention</li>
+        </ul>        
+    </ng-container>
+    <ng-container *ngIf="data.item == 'data'">
+        <h3>Data Analysis Experience</h3>
+        <ul>
+            <li>Experience visualizing datasets using Python and R</li>
+            <li>Experienced in analyzing data to find trends</li>
+            <li>Experience cleaning and normalizing datasets</li>
+        </ul>        
+    </ng-container>
+    <ng-container *ngIf="data.item == 'office'">
+        <h3>Microsoft Office 365 Experience</h3>
+        <ul>
+            <li>2+ years proffesional expereince working with Office 365</li>
+            <li>Profficient in Word</li>
+            <li>Excellent with Excel</li>
+        </ul>        
+    </ng-container>
 </div>
