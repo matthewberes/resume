@@ -16,7 +16,77 @@
                     <!-- <br> -->
                     <p>2+ years professional experience in a full-stack developer role at the Canada Revenue Agency. My work centered around revamping their website; mainly by rebuilding the front-end in Angular and polishing their Java back-end.</p>
             </div>
-            <div class="lang">
+            <div id="desktop" class="lang">                
+                <ng-container *ngIf="!mobile">
+                    <h2>Language Proficiency</h2>
+                    <div style="display: flex; flex-wrap: wrap; margin-top: -10px;">
+                        <div style="display: flex; margin-right: 20px;">
+                            <img title="HTML" src="assets/html.png" alt="HTML" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill html">90%</div> 
+                            </div> 
+                        </div>
+                        <div style="display: flex;">
+                            <img title="Java" src="assets/java.png" alt="Java" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill java">80%</div> 
+                            </div>
+                        </div>
+                        <div style="display: flex;  margin-right: 20px;">
+                            <img title="JavaScript" src="assets/javascript.png" alt="JavaScript" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill javascript">85%</div> 
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <img title="C" src="assets/c.png" alt="C" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill c">55%</div> 
+                            </div>
+                        </div>
+                        <div style="display: flex; margin-right: 20px;">
+                            <img title="CSS" src="assets/css.png" alt="CSS" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill css">75%</div> 
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <img title="PHP" src="assets/php.png" alt="PHP" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill php">50%</div> 
+                            </div>
+                        </div>
+                        <div style="display: flex; margin-right: 20px;">
+                            <img title="RxJS" src="assets/rxjs.png" alt="RxJS" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill rxjs">70%</div> 
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <img title="Python" src="assets/python.png" alt="Python" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill python">50%</div> 
+                            </div>
+                        </div>                        
+                        <div style="display: flex; margin-right: 20px;">
+                            <img title="C# (C Sharp)" src="assets/csharp.png" alt="C#" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill csharp">80%</div> 
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <img title="R" src="assets/r.png" alt="R" style="width: auto; height: 50px; margin-top: 2px;">
+                            <div class="container" style="width: 54vh; margin-top: 12px; margin-bottom: 15px"> 
+                                <div class="skill r">45%</div> 
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>            
+        </div> <!--to the right of image-->
+        <div class="break"></div>
+        <div id="mobile" class="lang">
+            <ng-container *ngIf="mobile">
                 <h2>Language Proficiency</h2>
                 <div style="display: flex; flex-wrap: wrap; margin-top: -10px;">
                     <div style="display: flex; margin-right: 20px;">
@@ -80,9 +150,8 @@
                         </div>
                     </div>
                 </div>
-            </div>            
-        </div> <!--to the right of image-->
-        <div class="break"></div>
+            </ng-container>
+        </div>            
         <div class="skills" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
             <img src="assets/agile.png" alt="agile experience (scrum)" (click)="openDialog('agile')" (keyup.enter)="openDialog('agile')" tabindex="0">
             <img src="assets/testing.png" alt="skilled in unit testing" (click)="openDialog('testing')" (keyup.enter)="openDialog('testing')" tabindex="0">
