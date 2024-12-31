@@ -32,7 +32,7 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1000px) {
     h2 {
         margin-top: 0;
         font-size: 12pt;
@@ -50,11 +50,24 @@
     .lang {
         margin-left: 2%;
     }
+
+    @media only screen and (max-width:999px) and (min-width:621px) {
+        h2 {
+            margin-top: 0;
+            font-size: 18pt;
+        }
+
+        .bio p {
+            margin-top: -1%;
+            font-size: 18px;
+        }
+    }
 }
 
 #mobile {
     margin-left: 3%;
     margin-top: -3%;
+    width: 90%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
