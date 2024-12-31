@@ -32,6 +32,28 @@
     font-size: 18px;
 }
 
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        margin-top: 0;
+        font-size: 18pt;
+    }
+
+    .bio {
+        max-width: 63%;
+    }
+
+    .bio p {
+        margin-top: -1%;
+        font-size: 12px;
+    }
+
+
+    .lang {
+        margin-left: -50%;
+    }
+}
+
 .container {
     background-color: rgb(192, 192, 192);
     width: 80%;
