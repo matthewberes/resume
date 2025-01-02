@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-taskbar',
@@ -20,10 +21,14 @@ export class TaskbarComponent implements OnInit {
     } else {
       this.path = window.location.hash;
     }
+    this.router.events
+      .pipe(filter((e): e is NavigationEnd => e instanceof NavigationEnd))
+      .subscribe((ev: NavigationEnd) => {
+        this.path = "#" + ev.url
+      });
   }
 
   onClick(val: string) {
-    this.path = "#/" + val;
     this.router.navigate(['/' + val]);
   }
 }
