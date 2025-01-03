@@ -24,7 +24,11 @@ export class TaskbarComponent implements OnInit {
     this.router.events
       .pipe(filter((e): e is NavigationEnd => e instanceof NavigationEnd))
       .subscribe((ev: NavigationEnd) => {
-        this.path = "#" + ev.url
+        if (ev.url == "/") {
+          this.path = "#/home";
+        } else {
+          this.path = "#" + ev.url
+        }
       });
   }
 
